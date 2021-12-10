@@ -1,0 +1,105 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bikeIMG{
+  width: 100%;
+  height: 20em;
+  background-color: red;
+}
+
+.missionStatement{
+  width: 100%;
+  height: 20em;
+  background-color: gray;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  height: 4em;
+  justify-content: center;
+  
+}
+
+.motomf{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size: x-large;
+}
+
+
+.shop{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.col1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.col2{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+}
+
+
+
+.navBar {
+  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+li {
+  list-style-type: none;
+  float: left;
+}
+
+li a {
+  
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+/*---------------------------------------------------*/
+.shopSquare {
+  height: 12em;
+  width: 10em;
+  background-color: #555;
+}
+/*---------------------------------------------------*/
