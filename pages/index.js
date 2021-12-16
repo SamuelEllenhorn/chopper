@@ -51,6 +51,7 @@ export default function Home() {
   {/* TODO: Map through the items in context 
           * to display an ItemCard with the data for each
           */
+  /*
           shopItems.map((item, i) => (
             <ItemCard 
             key={i}
@@ -60,7 +61,7 @@ export default function Home() {
             price={item.price}
             add={addToCart}
             />
-          ))
+          ))*/
           }
  
 
