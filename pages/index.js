@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Auth } from '@supabase/ui'
+import Link from 'next/link'
 import React, { useEffect, useState } from "react";
 import { useItems } from '../context/ItemContext'
 import { useUser } from '../context/UserContext' 
@@ -12,8 +13,21 @@ import ItemCard from '../components/ItemCard'
 export default function Home() 
 {
 
-  
+  const { user, setUser } = useUser()
+
   const { items } = useItems()
+  
+
+  const addToCart = (itemName) => {
+    /* TODO: Write function that updates the
+     * user context object's cart 
+     * to include the added item
+    */
+    let item = items.filter(p => p.name === itemName)[0]
+    let updatedCart = user.cart
+    updatedCart.push(item)
+    setUser({name: user.name, cart: updatedCart})
+  }
   return (
 
 
@@ -28,43 +42,43 @@ export default function Home()
 
 <div class = "topWraper">
 
-
   <div class="topnav">
     <header>
       <a class="motomf" href="#motomf">MotoMf</a>      
     </header> 
-
     <div class = "icon">
      
     </div>
   </div>
 
+  <div class = "navBar" >
+        <ul>
+          <li><a href="default.asp">Home</a></li>
+          <li><a href="news.asp">News</a></li>
+          <li><a href="Contact.asp">Contact</a></li>
+          <li><a href="about.asp">About</a></li>
+          <div class = "liWraper">
+          <li> 
+            <div class = "cartWraper">
+              <Link href="/cart" >
+                <div class="cart">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  </svg>
+                  <p>{user.cart.length}</p>
 
-
-
-<div class = "navBar" >
-      <ul>
-      <li><a href="default.asp">Home</a></li>
-      <li><a href="news.asp">News</a></li>
-      <li><a href="Contact.asp">Contact</a></li>
-      <li><a href="about.asp">About</a></li>
-
-      <li> 
-        <div class = "cartWraper">
-        <a href="cart.asp"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-        </svg>ss</a>
-        </div>
-        </li>
-
-      
-
-
-
-      </ul>
+                  
+                  
+                </div>
+              </Link>
+            </div>
+          </li>
+          </div>
+        </ul>
+  </div>
 </div>
 
-</div>
 
 
 <div class="wrapper">  
@@ -103,7 +117,6 @@ export default function Home()
 
 <div class = "shop">
   {
-  
           items.map((item, i) => (
             <ItemCard 
             key={i}
@@ -111,7 +124,7 @@ export default function Home()
             img={item.img}
             stock={item.stock}
             price={item.price}
-            //add={addToCart}
+            add={addToCart}
             />
           ))
   }
@@ -127,6 +140,7 @@ export default function Home()
 
 
 <div class = "contact">
+  
      <div class = "contactInfo">
       Contact: 310-424-497
      
