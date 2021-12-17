@@ -49,6 +49,23 @@ header {
   font-size: x-large;
 }
 
+.cart{
+  display: flex;
+  
+  
+}
+
+
+
+.cartWraper{
+  
+  
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+  width: 2rem;
+  
+}
 
 
 
@@ -173,6 +190,7 @@ a {
 .navBar ul{
   display: flex;
   justify-content: space-between;
+  padding-right: 3em;
   
   
 }
@@ -194,9 +212,6 @@ li a {
 }
 
 
-.cartWraper{
-  padding-right: 2em;
-}
 .imgContainer{
   color:black;
   
@@ -317,8 +332,16 @@ li a {
   color:red ;
   height: 5em;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 .icons{
-  background-color: rgb(236, 87, 0) ;
+  
   
 }
 
@@ -331,6 +354,53 @@ background: #3B5998;
 color: white;
 }
 
+
+.ckout {
+  width: min(100vw, 750px);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.checkout h1,
+.checkout .subtitle {
+  color: white;
+}
+
+.checkout .record {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.checkout .img-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.checkout .record img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.checkout .record .name {
+  color: darkgreen;
+  font-size: 1.8rem;
+}
+
+.checkout .record .price {
+  font-size: 1.4rem;
+}
+
+.checkout .total {
+  color: white;
+  margin-top: 20px;
+  text-align: right;
+}
+
 @media screen and (min-width: 1485px) {
   .videoText{
     color: rgb(143, 14, 14);
@@ -340,6 +410,20 @@ color: white;
     font-family: "Copperplate", "Copperplate", monospace;
   
   }
+}
+  @media screen and (min-width: 185px) {
+    .outerWraper{
+      
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+    
+    }
+
+  
+
 
 
 }
