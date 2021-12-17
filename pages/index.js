@@ -103,6 +103,7 @@ export default function Home()
 
 <div class = "shop">
   {
+  /*
           items.map((item, i) => (
             <ItemCard 
             key={i}
@@ -112,7 +113,7 @@ export default function Home()
             price={item.price}
             //add={addToCart}
             />
-          ))
+          ))*/
   }
 
 
