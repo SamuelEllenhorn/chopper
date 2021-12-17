@@ -420,10 +420,20 @@ color: white;
       padding: 0px;
       overflow-x: hidden; 
     
+
     }
 
+    .shop{
+      padding-top: 1em;
+    }
+
+    .iframe-container{
+      padding-top: 2em;
+    }
+  }
   
 
 
 
-}
+
+
