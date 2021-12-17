@@ -102,6 +102,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: right;
+  background-repeat: no-repeat;
 }
 .mottoSpacer{
   
