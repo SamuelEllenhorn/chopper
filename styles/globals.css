@@ -1,4 +1,7 @@
+
 html,
+
+
 body {
   padding: 0;
   margin: 0;
@@ -6,33 +9,23 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.bikeIMG{
-  width: 100%;
-  height: 20em;
-  background-color: red;
-}
-
-.missionStatement{
-  width: 100%;
-  height: 20em;
-  background-color: gray;
-
-}
-
-.wrapper {
+.topnav{
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: row;
 
+}
+.icon{
+  
+  background-image: url("/icon.png");
+  background-color: rgb(0, 0, 0);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 64px;
+  position: relative;
+  width: 160px;
+  
 }
 
 
@@ -45,14 +38,93 @@ header {
   height: 4em;
   justify-content: center;
   
+  
 }
 
 .motomf{
+  font-weight: bold;
   display: flex;
   justify-content: center;
   color:white;
   font-size: x-large;
 }
+
+
+
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bikeIMG{
+  width: 100%;
+  
+  height: 20em;
+  background-image: url("/motionPic.jpg");
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.mottoSpacer{
+  
+}
+.first-txt {
+  
+ padding: 10px;
+  
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 50px;
+  justify-content: flex-end;
+}
+
+
+
+
+
+.missionStatement{
+
+  font-size: 1em;
+  font-weight: bold;
+
+
+
+  width: 100%;
+  height: 20em;
+  background-color: rgb(87, 87, 87);
+  text-align: center;
+  border: 5px solid #000000;
+
+
+}
+
+.missionStatement p{
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
 
 
 .shop{
@@ -76,24 +148,59 @@ header {
 
 
 
-.navBar {
-  
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
- 
+
+
+
+
+
+
+.topWraper{
+  display: flex;
+  flex-direction: column;
+
+
 }
+
+
+.navBar {
+  height: 3.5em;
+  background-color: rgb(131, 43, 43);
+  justify-content: center;
+}
+
+
+
+.navBar ul{
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
 
 li {
   list-style-type: none;
   float: left;
+  
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 li a {
   
   display: block;
   padding: 8px;
-  background-color: #dddddd;
+  background-color: rgb(131, 43, 43);
+}
+
+
+.cartWraper{
+  padding-right: 2em;
+}
+.imgContainer{
+  color:black;
+  
+
 }
 
 /*---------------------------------------------------*/
@@ -103,3 +210,136 @@ li a {
   background-color: #555;
 }
 /*---------------------------------------------------*/
+
+
+.shop {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  overflow: hidden;
+  min-width: 300px;
+  border-radius: 20px;
+}
+.card .img-wrapper {
+  overflow: hidden;
+  max-height: 370px;
+}
+.card .img-wrapper img {
+  display: block;
+  overflow: hidden;
+  height: 30%;
+  width: 100%;
+  object-fit: contain;
+}
+.card .content {
+  padding: 20px;
+  background-color: white;
+}
+
+.card .content button {
+  width: 100%;
+  padding: 15px 0;
+  color: white;
+  font-weight: 700;
+  background-color: #6b2323;
+  border: none;
+  border-radius: 10px;
+}
+
+.card .content h2 {
+  padding: 5px 0;
+}
+
+.card .content .price {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+
+.Contact{
+  width: 100%;
+  height: 10em;
+  background-color: rgb(139, 139, 139);
+  text-align: center;
+
+  display: flexd;
+}
+
+
+.iframe-container{
+  background-color: white;
+  position: relative;
+  
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%;
+  
+  height: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.iframe-container iframe{
+  border: rgb(122, 122, 122);
+  border-width: 1em;
+  border-style: solid;
+  position: absolute;
+  bottom: 7em;
+   
+  width: 60%;
+  height: 60%;
+}
+.videoText{
+  color: rgb(143, 14, 14);;
+  font-weight: bold;
+  font-size: 2em;
+  padding-top: 1em;
+  font-family: "Copperplate", "Copperplate", monospace;
+
+}
+.iframe-Icontainer{
+  
+  
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  height: 10em;
+  background-color: gray;
+  align-items: center;
+}
+.contactInfo{
+  color:red ;
+  height: 5em;
+}
+.icons{
+  background-color: rgb(236, 87, 0) ;
+  
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+@media screen and (min-width: 1485px) {
+  .videoText{
+    color: rgb(143, 14, 14);
+    font-weight: bold;
+    font-size: 3.5em;
+    padding-top: 1em;
+    font-family: "Copperplate", "Copperplate", monospace;
+  
+  }
+
+
+}
