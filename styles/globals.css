@@ -425,6 +425,11 @@ color: white;
     font-size: 3.5em;
     padding-top: 1em;
     font-family: "Copperplate", "Copperplate", monospace;
+    
+    
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
   
   }
 }
