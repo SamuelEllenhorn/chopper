@@ -90,9 +90,13 @@ a:hover {
 }
 
 .bikeIMG{
+  
+  
+   
+  
   width: 100%;
   
-  height: 20em;
+  height: auto;
   background-image: url("/motionPic.jpg");
   background-size: 100%;
   background-position: center;
