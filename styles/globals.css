@@ -461,7 +461,7 @@ color: white;
     }
     .iframe-container {
      
-      
+      display: none;
     }
     .iframe-container iframe {
       
@@ -469,7 +469,7 @@ color: white;
     }
     
     .iframe {
-    
+      display: none;
     }
     
   }
