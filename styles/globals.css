@@ -460,6 +460,7 @@ color: white;
   
     }
     .iframe-container {
+      height: auto;
       
     }
     .iframe-container iframe {
