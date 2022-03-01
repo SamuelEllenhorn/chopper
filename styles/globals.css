@@ -466,6 +466,11 @@ color: white;
       
       
     }
+    
+    .iframe {
+      height: auto;
+    }
+    
   }
   
 
