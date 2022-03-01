@@ -465,7 +465,7 @@ color: white;
     }
     .iframe-container iframe {
       
-      
+      display: none;
     }
     
     .iframe {
