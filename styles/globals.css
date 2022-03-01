@@ -471,6 +471,10 @@ color: white;
     .iframe {
       display: none;
     }
+
+    .bikeIMG{
+      height: 100%;
+    }
     
   }
   
