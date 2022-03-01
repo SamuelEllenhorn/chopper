@@ -438,7 +438,7 @@ color: white;
       height: 20em;
   }}
 
-  @media screen and (max-width: 185px) {
+  @media screen and (max-width: 600px) {
     .outerWraper{
      
       width: 100%;
