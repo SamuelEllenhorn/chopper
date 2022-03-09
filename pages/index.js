@@ -51,8 +51,8 @@ export default function Home()
         <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">News</a></li>
-          <li><a href="Contact.asp">Contact</a></li>
-          <li><a href="javascript: document.body.scrollIntoView(false);">About</a></li>
+          <li><a href="Contact.asp">About</a></li>
+          <li><a href="javascript: document.body.scrollIntoView(false);">Contact</a></li>
 
 
           <div class = "liWraper">
