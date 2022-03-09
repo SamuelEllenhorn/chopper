@@ -52,7 +52,9 @@ export default function Home()
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">News</a></li>
           <li><a href="Contact.asp">Contact</a></li>
-          <li><a href="about.asp">About</a></li>
+          <li><a href="javascript: document.body.scrollIntoView(false);">About</a></li>
+
+
           <div class = "liWraper">
           <li> 
             <div class = "cartWraper">
