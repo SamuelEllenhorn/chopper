@@ -91,13 +91,15 @@ export default function Home()
         <div class="mottoSpacer">
             
         </div>
+
     <div class="first-txt">
+    <section id="missionStatement"></section>
             Win the Bike of your Dreams
         </div>
   </div>
 
   <div class = "missionStatement">
-  <section id="missionStatement">
+
      <p>
        We are selling this bike for charity! The specs of this bike are as follows, for information on 
        how the auction works pleaser read below:
@@ -106,7 +108,7 @@ export default function Home()
 
         The auction will be held on... 
      </p>
-     </section>
+     
       
     </div>
     
