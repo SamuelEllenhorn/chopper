@@ -51,10 +51,14 @@ export default function Home()
         <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">News</a></li>
-          <li><a href="missionStatement">About</a></li>
+          <li><a href="#missionStatement">About</a></li>
           <li><a href="javascript: document.body.scrollIntoView(false);">Contact</a></li>
 
           
+          
+
+          
+
           <div class = "liWraper">
           <li> 
             <div class = "cartWraper">
@@ -93,6 +97,7 @@ export default function Home()
   </div>
 
   <div class = "missionStatement">
+  <section id="missionStatement">
      <p>
        We are selling this bike for charity! The specs of this bike are as follows, for information on 
        how the auction works pleaser read below:
@@ -101,6 +106,7 @@ export default function Home()
 
         The auction will be held on... 
      </p>
+     </section>
       
     </div>
     
