@@ -51,7 +51,7 @@ export default function Home()
         <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">News</a></li>
-          <li><a id="missionStatement">About</a></li>
+          <li><a href="missionStatement">About</a></li>
           <li><a href="javascript: document.body.scrollIntoView(false);">Contact</a></li>
 
           
